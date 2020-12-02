@@ -116,6 +116,7 @@ module user_proj_aes #(
     reg e_ld;
     reg e_ld_i;
     wire e_done;
+    reg e_done_p;
 
     reg [127:0] e_key;
     reg [127:0] e_text;
@@ -141,8 +142,14 @@ module user_proj_aes #(
             e_key_i <= e_key;
         end
 
-        if (e_done == 1) e_text_o_p <= e_text_o;
-        if (e_rst == 0) e_text_o_p <= 128'h00000000000000000000000000000000;
+        if (e_done == 1) begin
+            e_text_o_p <= e_text_o;
+            e_done_p <= 1;
+        end
+        if (e_rst == 0) begin
+            e_text_o_p <= 128'h00000000000000000000000000000000;
+            e_done_p <= 0;
+        end
     end
 
     always @(posedge clk) begin
@@ -201,11 +208,10 @@ module user_proj_aes #(
                 e_ld <= wbs_dat_i[1];
             end
             else begin
-                rdata <= {{29{1'b0}}, e_done, e_ld, e_rst};
+                rdata <= {{29{1'b0}}, e_done_p, e_ld, e_rst};
             end
             wbs_ack_o <= 1'b1;
         end
-
     end
 
 endmodule
