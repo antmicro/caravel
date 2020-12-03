@@ -4,11 +4,11 @@ set ::env(DESIGN_NAME) user_proj_aes
 
 set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/user_proj_aes/aes_sbox.v \
-	$script_dir/../../verilog/rtl/user_proj_aes/aes_rcon.v \
 	$script_dir/../../verilog/rtl/user_proj_aes/aes_core.v \
-	$script_dir/../../verilog/rtl/user_proj_aes/aes_cipher_top.v \
-	$script_dir/../../verilog/rtl/user_proj_aes/aes_key_expand_128.v"
+	$script_dir/../../third_party/aes_128/aes_sbox.v \
+	$script_dir/../../third_party/aes_128/aes_rcon.v \
+	$script_dir/../../third_party/aes_128/aes_cipher_top.v \
+	$script_dir/../../third_party/aes_128/aes_key_expand_128.v"
 
 set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_PERIOD) "10"
