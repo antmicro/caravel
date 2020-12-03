@@ -2,12 +2,12 @@
 project: 
   description: "A template SoC for Google sponsored Open MPW shuttles for SKY130."
   foundry: "SkyWater"
-  git_url: "https://github.com/efabless/caravel.git"
-  organization: "Efabless"
-  organization_url: "http://efabless.com"
-  owner: "Tim Edwards"
+  git_url: "https://github.com/antmicro/caravel.git"
+  organization: "Antmicro"
+  organization_url: "https://antmicro.com"
+  owner: "Antmicro"
   process: "SKY130"
-  project_name: "Caravel"
+  project_name: "Caravel-AES128"
   tags: 
     - "Open MPW"
     - "Test Harness"
