@@ -65,6 +65,73 @@ Base address: ``0x2d000000``
        "config": {"bits": 32, "hspace": 1760, "vspace": 40, "lanes": 1, "fontsize": 9}  
    }
 
+
+.. wavedrom::
+
+     { "reg": [
+         {"name": "FLASH_IO[3:0]", "bits": 4},
+         {"name": "FLASH_CLK", "bits": 1},
+         {"name": "FLASH_CSB", "bits": 1},
+         {"bits": 2, "type": 1},
+         {"name": "OE_FLASH_IO [3:0]", "bits": 4},
+         {"bits": 4, "type": 1},
+         {"name": "DUMMY CLK COUNT", "bits": 4},
+         {"name": "QSPI ACCESS MODE", "bits": 3},
+         {"bits": 8, "type": 1},
+         {"name": "QSPI_EN", "bits": 1}],
+       "config": {"bits": 32, "hspace": 3000, "vspace": 40, "lanes": 1, "fontsize": 9}  
+   }
+
+
+.. wavedrom::
+
+     { "reg": [
+         {"name": "FLASH_IO[3:0]", "bits": 4},
+         {"name": "FLASH_CLK", "bits": 1},
+         {"name": "FLASH_CSB", "bits": 1},
+         {"bits": 2, "type": 1},
+         {"name": "OE_FLASH_IO [3:0]", "bits": 4},
+         {"bits": 4, "type": 1},
+         {"name": "DUMMY CLK COUNT", "bits": 4},
+         {"name": "QSPI ACCESS MODE", "bits": 3},
+         {"bits": 8, "type": 1},
+         {"name": "QSPI_EN", "bits": 1}],
+       "config": {"bits": 32, "hspace": 1760, "vspace": 40, "lanes": 1, "fontsize": 5}  
+   }
+
+.. wavedrom::
+
+     { "reg": [
+         {"name": "FLASH_IO[3:0]", "bits": 4},
+         {"name": "FLASH_CLK", "bits": 1},
+         {"name": "FLASH_CSB", "bits": 1},
+         {"bits": 2, "type": 1},
+         {"name": "OE_FLASH_IO [3:0]", "bits": 4},
+         {"bits": 4, "type": 1},
+         {"name": "DUMMY CLK COUNT", "bits": 4},
+         {"name": "QSPI ACCESS MODE", "bits": 3},
+         {"bits": 8, "type": 1},
+         {"name": "QSPI_EN", "bits": 1}],
+       "config": {"bits": 32, "hspace": 1760, "lanes": 2, "fontsize": 7}  
+   }
+
+.. wavedrom::
+
+     { "reg": [
+         {"name": "FLASH_IO[3:0]", "bits": 4},
+         {"name": "FLASH_CLK", "bits": 1},
+         {"name": "FLASH_CSB", "bits": 1},
+         {"bits": 2, "type": 1},
+         {"name": "OE_FLASH_IO [3:0]", "bits": 4},
+         {"bits": 4, "type": 1},
+         {"name": "DUMMY CLK COUNT", "bits": 4},
+         {"name": "QSPI ACCESS MODE", "bits": 3},
+         {"bits": 8, "type": 1},
+         {"name": "QSPI_EN", "bits": 1}],
+       "config": {"bits": 32, "hspace": "auto", "lanes": 2, "fontsize": "h1"}  
+   }
+
+
 .. list-table:: ``reg_spictrl`` register description
     :name: reg_spictrl_description
     :header-rows: 1
