@@ -131,6 +131,52 @@ Base address: ``0x2d000000``
        "config": {"bits": 32, "hspace": "auto", "lanes": 2, "fontsize": "h1"}  
    }
 
+.. wavedrom::
+
+     { "reg": [
+         {"name": "FLASH_IO[3:0]", "bits": 4},
+         {"name": "FLASH_CLK", "bits": 1},
+         {"name": "FLASH_CSB", "bits": 1},
+         {"bits": 2, "type": 1},
+         {"name": "OE_FLASH_IO [3:0]", "bits": 4},
+         {"bits": 4, "type": 1},
+         {"name": "DUMMY CLK COUNT", "bits": 4},
+         {"name": "QSPI ACCESS MODE", "bits": 3},
+         {"bits": 8, "type": 1},
+         {"name": "QSPI_EN", "bits": 1}],
+       "config": {"hscale" : 1}  
+   }
+
+.. wavedrom::
+
+     { "reg": [
+         {"name": "FLASH_IO[3:0]", "bits": 4},
+         {"name": "FLASH_CLK", "bits": 1},
+         {"name": "FLASH_CSB", "bits": 1},
+         {"bits": 2, "type": 1},
+         {"name": "OE_FLASH_IO [3:0]", "bits": 4},
+         {"bits": 4, "type": 1},
+         {"name": "DUMMY CLK COUNT", "bits": 4},
+         {"name": "QSPI ACCESS MODE", "bits": 3},
+         {"bits": 8, "type": 1},
+         {"name": "QSPI_EN", "bits": 1}],
+       "config": {"hscale" : 3}   
+   }
+
+.. wavedrom::
+
+     { "reg": [
+         {"name": "FLASH_IO[3:0]", "bits": 4},
+         {"name": "CLK", "bits": 1},
+         {"name": "CSB", "bits": 1},
+         {"bits": 2, "type": 1},
+         {"name": "OE_FLASH_IO [3:0]", "bits": 4},
+         {"bits": 4, "type": 1},
+         {"name": "DUMMY CLK COUNT", "bits": 4},
+         {"name": "ACCESS MODE", "bits": 3},
+         {"bits": 8, "type": 1},
+         {"name": "EN", "bits": 1}]
+   }
 
 .. list-table:: ``reg_spictrl`` register description
     :name: reg_spictrl_description
