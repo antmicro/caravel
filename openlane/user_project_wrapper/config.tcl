@@ -33,11 +33,11 @@ set ::env(CLOCK_PORT) "user_clock2"
 set ::env(CLOCK_NET) "mprj.clk"
 
 set ::env(CLOCK_PERIOD) "10"
-set ::env(_SPACING) 1.7
 
 ## Internal Macros
 ### Macro Placement
 set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
+set ::env(_SPACING) 1.7
 
 ### Black-box verilog and views
 set ::env(VERILOG_FILES_BLACKBOX) "\
