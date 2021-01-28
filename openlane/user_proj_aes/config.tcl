@@ -14,7 +14,7 @@ set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_PERIOD) "10"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 1000 1500"
+set ::env(DIE_AREA) "0 0 2000 2500"
 set ::env(DESIGN_IS_CORE) 0
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
@@ -26,3 +26,7 @@ set ::env(ROUTING_CORES) [ exec nproc ]
 set ::env(FP_CORE_UTIL) 25
 set ::env(PL_TARGET_DENSITY) [ expr ($::env(FP_CORE_UTIL)+5) / 100.0 ]
 set ::env(CELL_PAD) 6
+
+# Obstroct met4 and met5, reduce layer count
+set ::env(GLB_RT_MAXLAYER) 4
+set ::env(GLB_RT_OBS) "met4 0 0 1000 1500,met5 0 0 1000 1500"
