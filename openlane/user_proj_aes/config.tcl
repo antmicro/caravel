@@ -27,6 +27,6 @@ set ::env(FP_CORE_UTIL) 25
 set ::env(PL_TARGET_DENSITY) [ expr ($::env(FP_CORE_UTIL)+5) / 100.0 ]
 set ::env(CELL_PAD) 6
 
-# Obstroct met4 and met5, reduce layer count
+# Obstruct met4 and met5, reduce layer count
 set ::env(GLB_RT_MAXLAYER) 4
 set ::env(GLB_RT_OBS) "met4 0 0 1000 1500,met5 0 0 1000 1500"
